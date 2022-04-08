@@ -19,10 +19,16 @@ class GethubView {
     const repoName = document.querySelector('#repo-name');
     const repoDescription = document.querySelector('#repo-description');
     const repoImage = document.querySelector('#image');
+    const repoUrl = document.querySelector('#url');
+    const repoStargazers = document.querySelector('#repo-stargazers');
+
+    console.log(data)
  
     repoName.textContent = data.name;
     repoDescription.textContent = data.description;
     repoImage.src = data.organization.avatar_url;
+    repoUrl.href = data.html_url;
+    repoStargazers.textContent = 'Stargazers count: ' + data.stargazers_count;
   }
 }
 

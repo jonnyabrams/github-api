@@ -5,15 +5,23 @@
 </head>
   <body>
     <h1>GetHub (get it?)</h1>
-    <p>Enter a github repository name:</p>
+    <p>Enter a GitHub repository name:</p>
       <input id="repo-name-input" type="text" placeholder="e.g sinatra/sinatra" />
       <button id="submit-button">Submit</button>
-    <div>
+    <div id="main-container">
       <h3 id="repo-name"></h3>
 
       <p id="repo-description"></p>
 
+      <em><p id="repo-stargazers"></p></em>
+
+      <a href="" target="_blank" id="url">Visit this repo</a>
+
+      </div>
+    <div id="image-container">
+
       <img src="" id="image" />
+
     </div>
     <script src="bundle.js"></script>
   </body>
